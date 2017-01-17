@@ -3,7 +3,7 @@ const tabSize = document.querySelector('.tab-size');
 
 // Save tab size
 showTabSize = () => {
-	title.innerText = `Tab Size: ${tabSize.value}`;
+	title.innerText = `GitHub Tab Size: ${tabSize.value}`;
 	chrome.storage.sync.set({
 		tabSize: tabSize.value
 	});
