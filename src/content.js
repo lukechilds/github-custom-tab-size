@@ -18,3 +18,10 @@ table.diff-table,
 chrome.storage.sync.get({
 	tabSize: 8
 }, items => setTabSizeStyles(items.tabSize));
+
+// Update tab style if the setting updates
+chrome.storage.onChanged.addListener(items => {
+	if(items.tabSize) {
+		setTabSizeStyles(items.tabSize.newValue);
+	}
+})
