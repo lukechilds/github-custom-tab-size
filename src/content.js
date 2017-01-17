@@ -1,6 +1,6 @@
 // Inject empty style element for us to use
 const style = document.createElement('style');
-document.body.appendChild(style);
+document.addEventListener('DOMContentLoaded', () => document.body.appendChild(style));
 
 // Set tab size styles
 const setTabSizeStyles = size => style.innerHTML = `
