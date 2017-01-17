@@ -24,4 +24,4 @@ chrome.storage.onChanged.addListener(items => {
 	if(items.tabSize) {
 		setTabSizeStyles(items.tabSize.newValue);
 	}
-})
+});

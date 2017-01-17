@@ -7,7 +7,7 @@ showTabSize = () => {
 	chrome.storage.sync.set({
 		tabSize: tabSize.value
 	});
-}
+};
 
 // Bind save handler to input
 tabSize.addEventListener('input', showTabSize);
