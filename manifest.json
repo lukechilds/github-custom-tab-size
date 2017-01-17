@@ -10,5 +10,17 @@
 	},
 	"permissions": [
 		"storage"
+	],
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": [
+				"https://github.com/*/*",
+				"https://gist.github.com/*/*"
+			],
+			"js": [
+				"src/content.js"
+			]
+		}
 	]
 }
