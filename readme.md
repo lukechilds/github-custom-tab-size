@@ -1,6 +1,6 @@
 # Github Custom Tab Size
 
-> Set custom tab width for code view on GitHub.com
+> Chrome extension - Set custom tab width for code view on GitHub.com
 
 ## License
 
