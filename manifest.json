@@ -4,5 +4,8 @@
 	"description": "Make tab indented code more readable by allowing you to set a custom tab size",
 	"homepage_url": "https://github.com/lukechilds/github-custom-tab-size",
 	"manifest_version": 2,
-	"minimum_chrome_version": "36"
+	"minimum_chrome_version": "36",
+	"browser_action": {
+		"default_popup": "src/popup.html"
+	}
 }
