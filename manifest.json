@@ -7,5 +7,8 @@
 	"minimum_chrome_version": "36",
 	"browser_action": {
 		"default_popup": "src/popup.html"
-	}
+	},
+	"permissions": [
+		"storage"
+	]
 }

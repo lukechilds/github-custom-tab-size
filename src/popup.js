@@ -1,13 +1,28 @@
 const title = document.querySelector('h1');
 const tabSize = document.querySelector('.tab-size');
 
-// Handle tab size change
-setTabSize = () => {
-  title.innerText = `Tab Size: ${tabSize.value}`;
+// Show tab size
+showTabSize = () => {
+	title.innerText = `Tab Size: ${tabSize.value}`;
 }
 
-// Check size on init
-setTabSize();
+// Show size on init
+showTabSize();
 
-// Bind handler function to tab size input
-tabSize.addEventListener('input', setTabSize);
+// Show current ize as they drag
+tabSize.addEventListener('input', showTabSize);
+
+// Only save the value when they've made up their mind
+tabSize.addEventListener('input', () => chrome.storage.sync.set({
+	tabSize: tabSize.value
+}));
+
+// Load previsouly saved settings
+document.addEventListener('DOMContentLoaded', () => {
+	chrome.storage.sync.get({
+		tabSize: 8
+	}, items => {
+		tabSize.value = items.tabSize;
+		showTabSize();
+	});
+});
