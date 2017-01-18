@@ -4,7 +4,7 @@
 
 GitHub's default tab size is a whopping 8 spaces! This extension lets you set your own preference with a live preview. The tab size setting is synced across all Chrome browsers you're logged into.
 
-![Demo](http://i.imgur.com/Y3Rf9SF.gif)
+![Demo](https://i.imgur.com/Y3Rf9SF.gif)
 
 ## Install
 
