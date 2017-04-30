@@ -12,7 +12,7 @@ showTabSize = () => {
 // Bind save handler to input
 tabSize.addEventListener('input', showTabSize);
 
-// Load previsouly saved settings
+// Load previously saved settings
 document.addEventListener('DOMContentLoaded', () => {
 	chrome.storage.sync.get({
 		tabSize: 8
