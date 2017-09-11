@@ -10,6 +10,10 @@ GitHub's default tab size is a whopping 8 spaces! This extension lets you set yo
 
 Install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/github-custom-tab-size/jcjfkmdkcaopkioccnpbhiemfcmpnghe).
 
+## Related
+
+- [`gifgen`](https://github.com/lukechilds/gifgen) - Simple high quality GIF encoding
+
 ## License
 
 MIT © Luke Childs
