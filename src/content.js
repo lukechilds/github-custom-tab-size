@@ -4,9 +4,12 @@ document.addEventListener('DOMContentLoaded', () => document.body.appendChild(st
 
 // Set tab size styles
 const setTabSizeStyles = size => style.innerHTML = `
+body {
+	--tab-size: ${size};
+}
 * {
-	-moz-tab-size: ${size} !important;
-	     tab-size: ${size} !important;
+	-moz-tab-size: var(--tab-size) !important;
+	     tab-size: var(--tab-size) !important;
 }`;
 
 // Set tab size from settings on load
